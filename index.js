@@ -16,7 +16,6 @@ class Svg{
     }
     setShapeElement(shape){
         this.shapeElement = shape.render()
-
     }
     
 }
@@ -66,8 +65,8 @@ function writeToFile(fileName, data) {
 async function init() {
     console.log("Starting init");
 	var svgString = "";
-var timestamp = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-");
-var svg_file = "logo_" + timestamp + ".svg";
+    var timestamp = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-");
+    var svg_file = "logo_" + timestamp + ".svg";
 
     // Prompt the user for answers
     const answers = await inquirer.prompt(questions);
