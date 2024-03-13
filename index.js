@@ -1,8 +1,6 @@
-const filesystem = require('./node_modules/graceful-fs/graceful-fs')
+const fs = require('fs')
 const inquirer = require("inquirer");
 const {Circle, Square, Triangle} = require("./assets/js/shapes");
-// Imports the graceful-fs, inquirer, Circle, Square, and Triangle modules.
-// Defines a Svg class that has a constructor with three methods for rendering and setting the text and shape elements in the SVG string.
 
 class Svg{
     constructor(){
@@ -23,8 +21,6 @@ class Svg{
     
 }
 
-// Defines array of 'questions' using the 'inquirer' library with the following questions.
-// Each question is an object that specifies the properties of TEXT, TEXT COLOR, SHAPE COLOR, and Pixel Image.
 const questions = [
     {
         type: "input",
@@ -51,12 +47,19 @@ const questions = [
 
 // Function to write data to file
 function writeToFile(fileName, data) {
-	console.log("Writing [" + data + "] to file [" + fileName + "]")
-    filesystem.writeFile(fileName, data, function (err) {
+    const folderPath = './Generated-Images/';
+
+    if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath);
+    }
+
+    const fullPath = folderPath + fileName;
+
+    fs.writeFile(fullPath, data, function (err) {
         if (err) {
             return console.log(err);
         }
-        console.log("Congratulations, you have Generated a logo.svg!");
+        console.log("Congratulations, you have generated a logo.svg in the 'Generated Images' folder!");
     });
 }
 
@@ -71,10 +74,10 @@ async function init() {
 	//user text
 	var user_text = "";
 	if (answers.text.length > 0 && answers.text.length < 4) {
-		// 1-3 chars, valid entry
+		// 1-3 char = valid entry
 		user_text = answers.text;
 	} else {
-		// 0 or 4+ chars, invalid entry
+		// 0 or 4+ chars = invalid entry
 		console.log("Invalid user text field detected! Please enter 1-3 Characters, no more and no less");
         return;
 	}
@@ -116,8 +119,6 @@ async function init() {
 	
 	//Print shape to log
 	console.log("Displaying shape:\n\n" + svgString);
-	//document.getElementById("svg_image").innerHTML = svgString;
-
 	console.log("Shape generation complete!");
 	console.log("Writing shape to file...");
 	writeToFile(svg_file, svgString); 
