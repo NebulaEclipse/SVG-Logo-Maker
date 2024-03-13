@@ -66,7 +66,8 @@ function writeToFile(fileName, data) {
 async function init() {
     console.log("Starting init");
 	var svgString = "";
-	var svg_file = "logo.svg";
+var timestamp = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-");
+var svg_file = "logo_" + timestamp + ".svg";
 
     // Prompt the user for answers
     const answers = await inquirer.prompt(questions);
