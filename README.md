@@ -45,12 +45,12 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 4. Follow the on screen instructions to create your custom logo.
 5. Once you are satisfied with your design save it as 'logo.svg'.</s>
 
-Clone Repo
+# Clone Repo
 ![image](https://github.com/NebulaEclipse/SVG-Logo-Maker/assets/147276811/440cfd6e-532b-4c77-8de7-a4fc552d10d7)
 ![image](https://github.com/NebulaEclipse/SVG-Logo-Maker/assets/147276811/f397a3f6-36c6-4891-9eff-ce956e97f9bc)
 
-Running Program
+# Running Program
 ![image](https://github.com/NebulaEclipse/SVG-Logo-Maker/assets/147276811/29ceeec6-0c3a-4266-90af-f4aae3b283bf)
 
-Finished Image
+# Finished Image
 ![image](Generated-Images/logo_2024-03-13T19-53-26-958Z.svg)
