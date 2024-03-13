@@ -53,4 +53,4 @@ Running Program
 ![image](https://github.com/NebulaEclipse/SVG-Logo-Maker/assets/147276811/29ceeec6-0c3a-4266-90af-f4aae3b283bf)
 
 Finished Image
-![image](SVG-Logo-Maker\Generated-Images\logo_2024-03-13T19-53-26-958Z.svg)
+![image](Generated-Images\logo_2024-03-13T19-53-26-958Z.svg)
