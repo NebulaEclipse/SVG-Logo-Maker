@@ -43,4 +43,7 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 2. Open the integrated terminal and run npm  install to download required dependencies.
 3. Run node index.js to initiate the program.
 4. Follow the on screen instructions to create your custom logo.
-5. Once you are satisfied with your design save it as 'logo.svg'.</s>
+5. To find your design go to the `Generated-Images` folder within the cloned directory.
+```
+If you want to view the svg you can open the svg in file explorer which will then allow you to open it in your browser
+```
