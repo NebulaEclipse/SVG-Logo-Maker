@@ -47,6 +47,9 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
 If you want to view the svg you can open the svg in file explorer which will then allow you to open it in your browser
 ```
+# Installation Video
+https://github.com/NebulaEclipse/SVG-Logo-Maker/assets/147276811/042600b1-813f-4cca-b903-461021cf8398
+
 
 # Clone Repo
 ![image](https://github.com/NebulaEclipse/SVG-Logo-Maker/assets/147276811/440cfd6e-532b-4c77-8de7-a4fc552d10d7)
